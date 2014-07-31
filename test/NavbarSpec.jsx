@@ -108,6 +108,16 @@ describe('Nav', function () {
     assert.ok(instance.refs.nav.props.navbar);
   });
 
+  it('Should not mess with text children', function () {
+    var instance = ReactTestUtils.renderIntoDocument(
+          <Navbar brand="Brand">
+            Here is some text.
+          </Navbar>
+        );
+
+    assert.ok(/Here is some text./.test(instance.getDOMNode().innerHTML));
+  });
+
   it('Should pass nav prop to ul', function () {
     var instance = ReactTestUtils.renderIntoDocument(
             <Nav className="pull-right" />
