@@ -1,0 +1,16 @@
+{
+  "name": "devcards-js",
+  "version": "1.0.0",
+  "description": "This folder will become a module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commonmark": "^0.22.0",
+    "commonmark-react-renderer": "^2.0.1",
+    "react": "^0.14.2"
+  }
+}
